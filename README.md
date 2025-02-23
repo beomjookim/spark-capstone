@@ -5,26 +5,26 @@ Spark Bulk Data Load (SBDL)은 대량의 데이터를 Spark 기반으로 처리�
 📂 폴더 및 파일 구조
 
 SBDL/
-│-- conf/                  # 환경 설정 파일
-│   │-- sbdl.conf          # 애플리케이션 설정 파일
-│   │-- spark.conf         # Spark 설정 파일
-│-- lib/                   # 핵심 라이브러리 코드
-│   │-- ConfigLoader.py    # 설정 파일 로드 및 처리
-│   │-- DataLoader.py      # 데이터 로딩 관련 기능
-│   │-- DataGen.py         # 샘플 데이터 생성 스크립트
-│   │-- Transformations.py # 데이터 변환 및 조인 로직
-│   │-- Utils.py           # Spark 세션 설정 유틸리티
-│   │-- logger.py          # Log4j 기반 로깅 유틸리티
-│-- test_data/             # 테스트 데이터를 저장하는 폴더
-│-- Jenkinsfile            # CI/CD 설정 파일
-│-- log4j.properties       # 로깅 설정 파일
-│-- main.py                # 프로젝트 메인 실행 파일
-│-- Pipfile                # Python 패키지 종속성 관리 파일
-│-- Pipfile.lock           # 패키지 버전 고정 파일
-│-- sbdl_submit.sh         # Spark Submit 실행 스크립트
-│-- test_nutter_sbdl.py    # Nutter 기반 테스트 코드
-│-- test_pytest_sbdl.py    # Pytest 기반 테스트 코드
-│-- .gitignore             # Git에서 제외할 파일 목록
+├── conf/                  # 환경 설정 파일
+│   ├── sbdl.conf          # 애플리케이션 설정 파일
+│   ├── spark.conf         # Spark 설정 파일
+├── lib/                   # 핵심 라이브러리 코드
+│   ├── ConfigLoader.py    # 설정 파일 로드 및 처리
+│   ├── DataLoader.py      # 데이터 로딩 관련 기능
+│   ├── DataGen.py         # 샘플 데이터 생성 스크립트
+│   ├── Transformations.py # 데이터 변환 및 조인 로직
+│   ├── Utils.py           # Spark 세션 설정 유틸리티
+│   ├── logger.py          # Log4j 기반 로깅 유틸리티
+├── test_data/             # 테스트 데이터를 저장하는 폴더
+├── Jenkinsfile            # CI/CD 설정 파일
+├── log4j.properties       # 로깅 설정 파일
+├── main.py                # 프로젝트 메인 실행 파일
+├── Pipfile                # Python 패키지 종속성 관리 파일
+├── Pipfile.lock           # 패키지 버전 고정 파일
+├── sbdl_submit.sh         # Spark Submit 실행 스크립트
+├── test_nutter_sbdl.py    # Nutter 기반 테스트 코드
+├── test_pytest_sbdl.py    # Pytest 기반 테스트 코드
+└── .gitignore             # Git에서 제외할 파일 목록
 
 🚀 설치 및 실행 방법
 
@@ -133,4 +133,3 @@ CI/CD 파이프라인을 정의하며, Spark 애플리케이션을 빌드하고 
 sbdl_submit.sh
 
 spark-submit 명령어를 사용하여 클러스터에서 실행하는 스크립트
-
