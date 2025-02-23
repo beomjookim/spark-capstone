@@ -46,19 +46,15 @@ bash sbdl_submit.sh
 
 conf/sbdl.conf
 
-enable.hive: Hive 사용 여부 (true / false)
-
-hive.database: Hive 데이터베이스 이름
-
-kafka.topic: Kafka로 전송할 토픽명
-
-kafka.bootstrap.servers: Kafka 서버 정보
+enable.hive=true
+hive.database=my_database
+kafka.topic=my_topic
+kafka.bootstrap.servers=localhost:9092
 
 conf/spark.conf
 
-spark.executor.instances: 실행할 Executor 개수
-
-spark.executor.memory: Executor 메모리 할당량
+spark.executor.instances=4
+spark.executor.memory=8g
 
 🛠 주요 파일 설명
 
